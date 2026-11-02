@@ -1,0 +1,22 @@
+{
+  "trait": {
+    "covered": 76,
+    "total": 76,
+    "missing": []
+  },
+  "aspiration": {
+    "covered": 61,
+    "total": 61,
+    "missing": []
+  },
+  "skill": {
+    "covered": 51,
+    "total": 51,
+    "missing": []
+  },
+  "career": {
+    "covered": 35,
+    "total": 35,
+    "missing": []
+  }
+}
