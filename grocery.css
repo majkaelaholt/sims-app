@@ -4,3 +4,21 @@
 @media(max-width:1080px){.gp-columns{grid-template-columns:1fr}.gp-recipe-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}.gp-left{order:2}.gp-right{order:1}}
 @media(max-width:620px){.gp-card{padding:16px}.gp-intro{padding:13px 15px}.gp-intro .gp-tag{display:none}.gp-recipe-grid{grid-template-columns:1fr;max-height:600px}.gp-collections,.gp-sub-grid{grid-template-columns:1fr}.gp-flex-heading{flex-wrap:wrap}.gp-plan-item{align-items:flex-start}.gp-pantry-grid{grid-template-columns:1fr}.gp-editor{grid-template-columns:1fr}.gp-editor label{grid-column:1/-1}.gp-root .page-heading h1{font-size:26px}.gp-filters{flex-direction:column}.gp-filters select{max-width:none}}
 @media print{.gp-root .gp-intro,.gp-root .gp-right,.gp-shop-tools,.gp-toggle,.gp-saved,.gp-details,.gp-root .gp-footer,.gp-root .gp-plan-controls,.gp-root .gp-card:not(.gp-shop){display:none!important}.gp-columns{display:block}.gp-left{display:block}.gp-shop{padding:15px;border:0;box-shadow:none}.gp-shop .gp-prep{break-inside:avoid}.gp-root .gp-shopping-item{break-inside:avoid}}
+
+/* v4.5 — independently configured in-game serving sizes */
+.gp-serving-label{display:flex;flex-direction:column;gap:5px;color:#645a75;font-size:11px;font-weight:800;margin-top:8px}
+.gp-serving-select{max-width:100%;min-width:108px;border:1px solid #dfd7ed;border-radius:9px;padding:7px 9px;background:#fff;color:#544163;font-size:11px;font-weight:750}
+.gp-plan-controls{flex-wrap:wrap;gap:8px}
+.gp-plan-controls label{display:flex;align-items:center;gap:5px;white-space:nowrap}
+.gp-plan-controls input[type=number]{max-width:65px}
+.gp-unverified{display:block;color:#a34b65;font-size:11px;font-weight:800;margin-top:5px}
+.gp-unverified-panel{margin:12px 0;border:1px solid #d2a6b8;background:#fff6f8;color:#65354e;border-radius:12px;padding:13px 16px}
+.gp-unverified-panel strong{display:block;margin:0 0 6px}
+.gp-unverified-panel p{margin:0 0 8px;font-size:11px;line-height:1.6}
+.gp-unverified-panel ul{padding-left:19px;margin:0;font-size:11px}
+.gp-size-fields{display:grid;gap:10px;grid-template-columns:1fr}
+.gp-size-fields p{font-size:11px;color:#7f7087;line-height:1.6;margin:0}
+.gp-size-edit{padding:12px;border:1px solid #e9e0f1;background:#fcfbff;border-radius:12px;display:grid;gap:9px}
+.gp-size-edit h3{font-size:12px;color:#634785;margin:0}
+.gp-size-edit label{display:flex;flex-direction:column;font-size:11px;font-weight:700;gap:5px}
+.gp-size-edit textarea{width:100%;resize:vertical;min-height:72px;border:1px solid #e4ddeb;border-radius:10px;font-size:11px;padding:10px}
