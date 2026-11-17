@@ -1,37 +1,29 @@
-# SimStory Studio v4.2 — Hobby icon alignment
+# SimStory Studio v4.4 — Grocery Planner update
 
-Your Sims 4 idea generator now bundles **real icon PNG files from your uploaded Build-A-Sim Icon Pack [deathbypufferfish]**. There is **no need for a wiki connection or manual icon import**.
+## Grocery Planner (new)
 
-## Start
+Choose meals from the recipe shelf, set how many times you plan to cook each, and get one consolidated grocery list. Features:
+- 103 starter recipes and 8 stand-mixer prep ingredients, using recipe lists from Sims Community and The Sims Wiki as reference material
+- Automatically expand prepared ingredients into raw ingredients with the correct mixer batch yield (5 portions per batch)
+- Two cooking modes: raw ingredients / prepped ingredients
+- Use saved meal collections, favorites, searchable categories, and built-in menu ideas
+- Track what is in your pantry, check off purchased items, copy/download or print the list
+- Save custom recipes and prep components; edit built-in recipes to match your game
+- Your SimStory Studio JSON export/import now includes grocery planner data
+- One-time ownership setup: all cataloged packs except Enchanted by Nature, Adventure Awaits, and Royalty & Legacy
 
-- **Standalone HTML:** Download `SimStory-Studio-v4.2.html` and open it in a browser. The PNGs are embedded as data URIs and work completely offline.
-- **GitHub Pages:** Extract `SimStory-Studio-v4.2-GitHub-Pages.zip`, upload all files/folders to your repository, and open the GitHub Pages site. **Upload the assets folder** along with the code; it stores the PNG files.
+**Important:** This is a planning guide, not a complete authoritative database of all Sims 4 recipes. Ingredients may differ by pack combination, game version, serving sizes, or gameplay mods. If a recipe lists alternatives (e.g., “Milk or Egg”), the starter catalog uses one example; you can edit it. A cooking batch is not the same as an individual serving. Check the in-game cooking menu when accuracy matters.
 
-## Included
+## Changed files from v4.3
+Upload only these changed/new files to the root of your GitHub Pages repository:
+- `index.html` — includes the new CSS and JS
+- `app.js` — adds navigation, pack ownership update, persistent grocery state, export/import
+- `grocery.css` — new Grocery Planner styling
+- `grocery.js` — new planner interface and calculation engine
+- `grocery-data.js` — new recipe and prep ingredients data
+- `README.md` — notes/documentation (optional to deploy)
 
-Original named icon files for main traits, aspirations, skills, and careers (including useful career branches). The downloaded ZIP originally also contained thousands of secondary items such as buffs, pet traits, sentiments, and milestones; this build deliberately focuses on the four categories used by the character generator rather than bundling those extras. The source ZIP is not needed for normal use.
+No assets/icons files are changed by the grocery feature. The full ZIP includes the existing icons so it can also be deployed from scratch.
 
-All 61 aspirations offered in the app now have matching bundled icons, including Soul's Journey from the separately supplied `souls_journey.webp`. Some other unused names may still have no icon; those display a clear placeholder instead of an unrelated image. `bundled-icons.js` maps names to files.
-
-## Other functions
-
-Pack toggles, locked character choices, custom colors, generated backstories, skill priorities, roommate builder, Inspo Deck, decision dice, the saved idea library, and JSON import/export are all retained from v3.
-
-## Existing saves
-
-Local storage key is unchanged: `simstory-studio-v1`. Back up your saved ideas in v3 (Saved Ideas → Export) before replacing it, especially if using a different URL.
-
-## Credits
-
-Images from user-provided **Build-A-Sim Icon Pack by deathbypufferfish** and separate **Soul’s Journey** upload (converted from WebP to PNG). Sims artwork, character icons, and trademarks belong to Electronic Arts / Maxis and their applicable rights holders. This unofficial fan project is not affiliated with or endorsed by EA. Images are bundled for the user's personal fan project. The creator's original collection is not redistributed in its entirety.
-
-## v4.2 — Hobby icon fix
-
-Hobbies using learnable skills now display the corresponding bundled skill PNG. For example, the Knitting hobby uses `skill|Knitting`, exactly the same image used by Skills to grow or master. Different hobby phrasing such as "Making nectar" and "Playing piano" is handled by an intentional name-to-skill lookup. A hobby with no correct skill icon stays labeled rather than displaying unrelated artwork. No changes to saved idea formats.
-
-
-## v4.3 visual update
-
-- Added pack-library icons from the uploaded **Builder’s Icon Pack [deathbypufferfish]**
-- Added pack, venue, lot-trait, lot-challenge, tiny-home, and apartment-trait icons to the icon library
-- Reused Sims icons in a few UI spots for a more cohesive look
+## License / source notes
+Unofficial Sims fan project. Gameplay art © Electronic Arts / Maxis. Bundled graphic icons from the user's Build-A-Sim and Builder's icon pack uploads by deathbypufferfish, plus user's Soul's Journey icon. Recipe references: https://simscommunity.info/2023/10/19/ultimate-sims-4-recipe-list/ and https://sims.fandom.com/wiki/Cooking_(The_Sims_4).
